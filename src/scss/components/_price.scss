@@ -1,0 +1,133 @@
+.pagecrm-price {
+  padding-bottom: 85px;
+  @include desktop {
+
+    padding-bottom: 111px;
+  }
+
+  &__subtitle {
+    @include desktop {
+      margin-bottom: 82px;
+    }
+  }
+
+  &__item {
+    padding: 19px 12px;
+    grid-column: 6 span;
+    min-height: 206px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #d795ff, 0 0 4px 0 #d795ff;
+    background: linear-gradient(90deg, rgba(30, 0, 68, 1) 38%, rgba(53, 7, 137, 0.48783263305322133) 100%);
+
+
+    @include desktop {
+      min-height: 389px;
+    }
+  }
+
+  &__item:nth-child(3){
+    @include medium {
+      grid-column: 4/10;
+    }
+
+  }
+
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 15px);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(158, 0, 255, 0.15);
+    margin-bottom: 10px;
+
+    @include desktop {
+      padding: 24px;
+    }
+
+  }
+
+  &__info {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--r1-white);
+
+    @include desktop {
+      font-size: 24px;
+      line-height: 125%;
+    }
+  }
+
+  &__price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: right;
+    background: linear-gradient(157deg, #b195ff 0%, #d795ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include desktop {
+      font-size: 36px;
+      line-height: 183%;
+    }
+  }
+
+  &__item-bottom {
+    display: flex;
+    flex-direction: column;
+    min-height: 108px;
+
+    @include medium {
+      min-height: 133px;
+    }
+
+    @include desktop {
+      min-height: 200px;
+      padding-left: 26px;
+    }
+  }
+
+  &__item-list {
+    margin-bottom: auto;
+  }
+
+  &__item-item {
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 246%;
+    color: var(--r1-white);
+    background-image: url(../img/check-circle-1.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    @include desktop {
+font-size: 24px;
+    }
+
+  }
+
+  &__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    background-image: url(../img/Arrow.svg);
+    background-position: center right 40px;
+    background-repeat: no-repeat;
+    align-self: center;
+
+    @include desktop {
+      padding-left: 70px;
+      background-position: center right 50px;
+      font-size: 24px;
+    }
+}
+
+
+}

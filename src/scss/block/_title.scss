@@ -1,0 +1,93 @@
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--r1-white);
+  mix-blend-mode: overlay;
+  margin-bottom: 10px;
+
+  @include large {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    font-size: 42px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+
+  }
+}
+
+.subtitle--big {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 155%;
+  color: var(--r1-white);
+  text-align: center;
+
+  @include medium {
+    font-size: 36px;
+    line-height: 125%;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+
+  }
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--r1-white);
+
+  @include large {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    font-size: 45px;
+    line-height: 198%;
+    font-variant: small-caps;
+    text-transform: none;
+
+  }
+
+}
+
+.subtitle--small {
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 118%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background: linear-gradient(218deg, #fff 0%, #d795ff 52.4%, #7bc2fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include large {
+    font-size: 24px;
+  }
+
+  @include desktop {
+    font-family: var(--font-family);
+    font-size: 36px;
+    line-height: 111%;
+  }
+}

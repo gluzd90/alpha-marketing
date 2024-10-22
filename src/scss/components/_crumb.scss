@@ -1,0 +1,57 @@
+.crumb {
+  &__item {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #e9deff;
+
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      right: -15px;
+      background-image: url(../img/Vector.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &__link {
+      color: #e9deff;
+
+
+
+
+
+      & span {
+        color: currentColor;
+      }
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    gap: 25px;
+  }
+
+  &--active {
+    text-shadow: 0 0 4px #d795ff;
+    pointer-events: none;
+  }
+
+  a:-webkit-any-link {
+    color: #e9deff;
+    cursor: pointer;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

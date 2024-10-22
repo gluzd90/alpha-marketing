@@ -1,0 +1,171 @@
+
+.pagecrm {
+  display: block;
+  padding-bottom: 75px;
+
+  @include large{
+    padding-bottom: 120px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--r1-white);
+    text-shadow: 0 0 10px rgba(215, 149, 255, 0.7);
+    margin-bottom: auto;
+
+    @include large {
+      font-size: 48px;
+      line-height: 139%;
+    }
+
+    @include desktop {
+      font-size: 64px;
+      line-height: 139%;
+    }
+  }
+
+  &__block {
+    @include large {
+      margin-bottom: 15px;
+    }
+  }
+
+
+  &__btn {
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #d795ff;
+    background: rgba(177, 149, 255, 1);
+    backdrop-filter: blur(100px);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--r1-white);
+    z-index: 5;
+    backdrop-filter: blur(100px);
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-shadow: 0px 0px 10px #ffffff;
+        box-shadow: 0px 0px 3.14815px 0px rgba(162, 45, 247, 0.1), 0px 0px 6.51852px 0px rgba(162, 45, 247, 0.1), 0px 0px 13px 0px rgba(162, 45, 247, 0.1), 0px 0px 25.48148px 0px rgba(162, 45, 247, 0.1), 0px 0px 46.85185px 0px rgba(162, 45, 247, 0.1), 0px 0px 19px 9px rgba(162, 45, 247, 0.1), 0px 0px 20px 0px #29D9FF !important;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 10px 0 #d795ff;
+      background: rgba(177, 149, 255, 0.5), rgba(0, 0, 0, 0.05);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @include large {
+      font-size: 20px;
+      padding: 15px 30px;
+
+    }
+
+    @include desktop {
+      font-size: 24px;
+      padding: 20px 40px;
+
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, rgba(116, 223, 221, 1) 31%, rgba(161, 180, 239, 0.5) 54%, rgba(89, 248, 210, 0.5) 100%);
+      z-index: -5;
+    }
+  }
+
+  &__btn-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 115px;
+    border-radius: 15px 0 0 15px;
+    background: rgba(29, 1, 65, 0.3);
+
+    @include large {
+      top: 77px;
+    }
+  }
+
+  &__btn-message {
+    padding: 10px 13px;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    z-index: 10;
+  }
+
+  &__btn-tel {
+    padding: 10px 13px;
+    z-index: 10;
+  }
+
+  &__btn-message,
+  &__btn-tel {
+
+    & svg path {
+      fill: rgb(248, 237, 255);
+    }
+  }
+
+  &__btn-message,
+  &__btn-tel {
+    & svg {
+      fill: rgb(248, 237, 255);
+      filter:  drop-shadow(0px 0px 2px #00FFE1) drop-shadow(0px 0px 3px #00FFE1) drop-shadow(0px 0px 11px #00FFE1) drop-shadow(0px 0px 21px #00FFE1) drop-shadow(0px 0px 36px #00FFE1) drop-shadow(0px 0px 64px #00FFE1);
+    }
+    }
+
+}
+
+.pagecrm-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 473px;
+  padding-top: 45px;
+  background-image: url(../img/Line\ 9.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include large {
+    padding-top: 152px;
+    min-height: 1068px;
+    background-image: url(../img/Line1600.webp);
+    background-position: top center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/Group\ 1321314616.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include large {
+      background-image: url(../img/Group1600.webp);
+    }
+
+    @include desktop {
+      background-image: url(../img/Group-desktop.webp);
+      background-size: 705px 581px;
+    }
+  }
+}
