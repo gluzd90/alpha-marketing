@@ -1,0 +1,8 @@
+/*! choices.js v10.2.0 | © 2022 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
+
+/**
+ * @file Dynamic transfer of elements from one place to another at breakpoints.
+ * @copyright SineYlo, 2024
+ * @version 1.0.7
+ * @license MIT
+ */
